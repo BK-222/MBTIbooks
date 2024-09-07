@@ -6,11 +6,7 @@
 </script>
 
 <template>
-  <div class="bg-gray-200">
-    Hello, User.
-    <BaseForm class="flex justify-center items-center min-h-screen" />
-    <div v-if="resultsLoaded">
-    
-    </div>
+  <div class="flex justify-center items-center bg-gray-200 min-h-screen">
+    <BaseForm class="p-12 bg-gray-300" />
   </div>
 </template>
