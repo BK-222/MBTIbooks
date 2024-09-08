@@ -22,7 +22,7 @@ const useUserInputStore = defineStore('userInput', () => {
   const fetchResults = async function() {
     
   }
-  return { mbti, historicFigures, setMBTI, setEnneagram, fetchResults };
+  return { mbti, historicFigures, setMBTI, fetchResults };
 });
 
 export default useUserInputStore;

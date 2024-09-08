@@ -27,7 +27,7 @@
 <template>  
   <BaseForm @submit.prevent="submitForm">
     <MbtiInput v-model="mbti" />
-    <EnneagramInput v-model="enneagram" />
+    <!-- <EnneagramInput v-model="enneagram" /> -->
     <BaseButton>Submit</BaseButton>
   </BaseForm>
 
