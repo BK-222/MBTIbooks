@@ -1,7 +1,7 @@
 {
   "figures": [
-    { "name": "Catherine the Great", "mbti": ["ENTP"], "enneagram": ["7"], "image": "" }
-    { "name": "Leonardo da Vinci", "mbti": ["ENTP"], "enneagram": ["7"], "image": "" }
+    { "name": "Catherine the Great", "mbti": ["ENTP"], "enneagram": ["7"], "image": "" },
+    { "name": "Leonardo da Vinci", "mbti": ["ENTP"], "enneagram": ["7"], "image": "" },
     { "name": "Benjamin Franklin", "mbti": ["ENTP"], "enneagram": ["7"], "image": "" }
   ],
   "books": [
