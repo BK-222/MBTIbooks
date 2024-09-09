@@ -1,7 +1,6 @@
 <template>
   <div>
     <header>
-      <h1>Personality Matching</h1>
     </header>
     <main>
       <slot></slot>

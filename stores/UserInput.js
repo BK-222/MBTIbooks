@@ -10,8 +10,7 @@ const useUserInputStore = defineStore('userInput', () => {
   const setMBTI = function(value) {
     mbti.value = value;
   }
-
-  const setHistoricFigures = (data) => {
+  const setHistoricFigures = function(data) {
     historicFigures.value = data;
   }
 
