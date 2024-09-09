@@ -2,16 +2,17 @@ import { defineStore } from 'pinia';
 import { ref, computed } from 'vue';
 
 const useUserInputStore = defineStore('userInput', () => {
-  const mbti = ref('');
-  const historicFigures = ref([]);
-  // const enneagram = ref('');
+  const mbti = ref(''); // stores the user's MBTI input
+  const enneagram = ref(''); // stores the user's Enneagram input
+  
+  const figures = ref([]); // stores the fetched figures
   // const bookRecommendations = ref([]);
 
-  const setMBTI = function(value) {
+  const setMbti = function(value) {
     mbti.value = value;
   }
-  const setHistoricFigures = function(data) {
-    historicFigures.value = data;
+  const setFigures = function(data) {
+    figures.value = data;
   }
 
   // const setEnneagram = function(value) {
@@ -21,7 +22,7 @@ const useUserInputStore = defineStore('userInput', () => {
   const fetchResults = async function() {
     
   }
-  return { mbti, historicFigures, setMBTI, fetchResults };
+  return { mbti, figures, setMbti, setFigures, fetchResults };
 });
 
 export default useUserInputStore;

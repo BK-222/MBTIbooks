@@ -1,9 +1,11 @@
 <script setup>
   import { ref } from 'vue';
+  import useUserInputStore from '@/stores/UserInput.js';
 
   const mbti = ref('');
   const emit = defineEmits(['submit']);
   // const enneagram = ref('');
+  const store = useUserInputStore();
 
   const submitForm = async function() {
     if (!mbti.value) {
@@ -11,6 +13,8 @@
       return;   //   alert('Please select both MBTI and Enneagram');
     }
     // await fetchFigures();
+    // emit('submit', mbti.value);
+    // store.setMbti(store.mbti);
     emit('submit', mbti.value);
   }
 </script>
