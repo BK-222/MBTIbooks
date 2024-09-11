@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia';
-import { ref, computed } from 'vue';
+import { ref } from 'vue';
 
 const useUserInputStore = defineStore('userInput', () => {
   const mbti = ref(''); // stores the user's MBTI input
