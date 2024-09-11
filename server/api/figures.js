@@ -1,11 +1,11 @@
-import figures from '@/data/famousFigures.json';
+import figures from '@/data/figures.json';
 
 const fetchFiguresData = defineEventHandler(async (event) => {
   try {
-    const { mbti } = getQuery(event);
+    const { mbti, enneagram } = getQuery(event); // gets ?mbti= and ?enneagram= query params
 
     const filteredFigures = figures.figures.filter((figure) => {
-      return figure.mbti.includes(mbti); //use includes for array comparisons in .json
+      return figure.mbti.includes(mbti) && figure.enneagram.includes(enneagram); //use includes for array comparisons in .json
     });
 
     const idealResponse = filteredFigures.map(figure => ({

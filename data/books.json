@@ -1,0 +1,7 @@
+{
+  "books": [
+    { "title": "Catherine - Portrait of a Woman", "mbti": ["ENTP"], "enneagram": ["7"], "link": "" },
+    { "title": "Franklin - An American Life", "mbti": ["ENTP"], "enneagram": ["7"], "link": "" },
+    { "title": "Leonardo Da Vinci - The Biography", "mbti": ["ENTP"], "enneagram": ["7"], "link": "" }
+  ]
+}

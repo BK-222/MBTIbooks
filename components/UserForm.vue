@@ -1,28 +1,27 @@
 <script setup>
   import { ref } from 'vue';
-  import useUserInputStore from '@/stores/UserInput.js';
+  // import useUserInputStore from '@/stores/UserInput.js';
 
-  const mbti = ref('');
   const emit = defineEmits(['submit']);
-  // const enneagram = ref('');
-  const store = useUserInputStore();
+  const mbti = ref('');
+  const enneagram = ref('');
+  // const store = useUserInputStore();
 
   const submitForm = async function() {
-    if (!mbti.value) {
+    if (!mbti.value || !enneagram.value) {
       alert('Please enter both MBTI and Enneagram');
-      return;   //   alert('Please select both MBTI and Enneagram');
+      return;
     }
+    emit('submit', { mbti: mbti.value, enneagram: enneagram.value });
     // await fetchFigures();
-    // emit('submit', mbti.value);
     // store.setMbti(store.mbti);
-    emit('submit', mbti.value);
   }
 </script>
 
 <template>  
   <BaseForm @submit.prevent="submitForm">
     <MbtiInput v-model="mbti" />
-    <!-- <EnneagramInput v-model="enneagram" /> -->
+    <EnneagramInput v-model="enneagram" />
     <BaseButton>Submit</BaseButton>
   </BaseForm>
 </template>

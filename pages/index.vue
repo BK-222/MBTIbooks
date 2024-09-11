@@ -3,42 +3,49 @@
   import useUserInputStore from '@/stores/UserInput.js';
 
   const store = useUserInputStore();
-  const resultsLoaded = ref(false);
+  // const resultsLoaded = ref(false);
 
-  // const figures = ref([]);
-  // const mbti = ref(''); not needed when using store
-
-  const fetchFigures = async function() {  // Fetch data from API
+  const fetchData = async function(type, setter) {
     try {
-      const response = await $fetch(`/api/figures?mbti=${mbti.value}`);
-      store.setFigures(response);
-      resultsLoaded.value = true;
-      // figures.value = response;
+      const response = await $fetch(`/api/${type}?mbti=${store.mbti}&enneagram=${store.enneagram}`);
+      setter(response);
     } catch (error) {
-      console.error('Error fetching figures', error.message);
+      console.error('Error fetching data', error.message);
     }
   }
-
-  const handleSubmit = async function(value) { 
-    store.setMbti(value);  // Store MBTI in Pinia
-    await fetchFigures(); // Fetch data from API
+  const fetchFigures = async function() {
+    await fetchData('figures', store.setFigures);
   }
-  // const handleSubmit = function(value) { // for getting value from UserForm instead of the store
-  //   mbti.value = value;
-  //   fetchFigures();
-  // }
 
-  // const fetchFigures = async function() {    
+  const fetchBooks = async function() {
+    await fetchData('books', store.setBooks);
+  }
+  
+  const handleSubmit = async function(data) { 
+    store.setMbti(data.mbti);
+    store.setEnneagram(data.enneagram);
+    await fetchFigures();
+    await fetchBooks();
+  }
+
+  // const fetchFigures = async function() {  // Fetch data from API
   //   try {
-  //     const response = await $fetch(`/api/figures?mbti=${mbti.value}`);
-  //     figures.value = response;
+  //     const response = await $fetch(`/api/figures?mbti=${store.mbti}&enneagram=${store.enneagram}`);
+  //     store.setFigures(response);
+  //     // resultsLoaded.value = true;
   //   } catch (error) {
   //     console.error('Error fetching figures', error.message);
   //   }
   // }
-  // const handleSubmit = function(value) {
-  //   mbti.value = value;
-  //   fetchFigures();
+
+  // const fetchBooks = async function() {
+  //   try {
+  //     const response = await $fetch(`/api/books?mbti=${store.mbti}&enneagram=${store.enneagram}`);
+  //     store.setBooks(response);
+  //     // resultsLoaded.value = true;
+  //   } catch {
+  //     console.error('Error fetching books', error.message);
+  //   }
   // }
 
 </script>
@@ -49,6 +56,11 @@
     <div v-if="store.figures.length">
       <div v-for="figure in store.figures" :key="figure.name">
         <p>{{ figure.name }}</p>
+      </div>
+    </div>
+    <div v-if="store.books.length">
+      <div v-for="book in store.books" :key="book.title">
+        <p>{{ book.title }}</p>
       </div>
     </div>
   </div>

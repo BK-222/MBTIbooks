@@ -1,0 +1,11 @@
+{
+  "figures": [
+    { "name": "Catherine the Great", "mbti": ["ENTP"], "enneagram": ["7"], "image": "" },
+    { "name": "Leonardo da Vinci", "mbti": ["ENTP"], "enneagram": ["7"], "image": "" },
+    { "name": "Benjamin Franklin", "mbti": ["ENTP"], "enneagram": ["7"], "image": "" },
+    { "name": "Christopher Columbus", "mbti": ["ENTP"], "enneagram": ["8"], "image": "" },
+    { "name": "Oda Nobunaga", "mbti": ["ENTP"], "enneagram": ["8"], "image": "" },
+    { "name": "Socrates", "mbti": ["ENTP"], "enneagram": ["8"], "image": "" },
+    { "name": "Alexander the Great", "mbti": ["ENTP", "ESTP"], "enneagram": ["8"], "image": "" }
+  ]
+}

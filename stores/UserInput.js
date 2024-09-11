@@ -6,23 +6,22 @@ const useUserInputStore = defineStore('userInput', () => {
   const enneagram = ref(''); // stores the user's Enneagram input
   
   const figures = ref([]); // stores the fetched figures
-  // const bookRecommendations = ref([]);
+  const books = ref([]); // stores the fetched books
 
   const setMbti = function(value) {
     mbti.value = value;
   }
+  const setEnneagram = function(value) {
+    enneagram.value = value;
+  }
   const setFigures = function(data) {
     figures.value = data;
   }
-
-  // const setEnneagram = function(value) {
-  //   enneagram.value = value;
-  // }
-
-  const fetchResults = async function() {
-    
+  const setBooks = function(data) {
+    books.value = data;
   }
-  return { mbti, figures, setMbti, setFigures, fetchResults };
+
+  return { mbti, enneagram, figures, books, setMbti, setEnneagram, setFigures, setBooks };
 });
 
 export default useUserInputStore;
