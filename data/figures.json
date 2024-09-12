@@ -1,7 +1,7 @@
 {
   "figures": [
-    { "name": "Catherine the Great", "mbti": ["ENTP"], "enneagram": ["7"], "image": "" },
     { "name": "Leonardo da Vinci", "mbti": ["ENTP"], "enneagram": ["7"], "image": "" },
+    { "name": "Catherine the Great", "mbti": ["ENTP"], "enneagram": ["7"], "image": "" },
     { "name": "Benjamin Franklin", "mbti": ["ENTP"], "enneagram": ["7"], "image": "" },
     { "name": "Christopher Columbus", "mbti": ["ENTP"], "enneagram": ["8"], "image": "" },
     { "name": "Oda Nobunaga", "mbti": ["ENTP"], "enneagram": ["8"], "image": "" },
@@ -20,8 +20,24 @@
     { "name": "Friedrich Schiller", "mbti": ["INTP"], "enneagram": ["4"], "image": "" },
     { "name": "Maurice Ravel", "mbti": ["ENTP"], "enneagram": ["4"], "image": "" },
 
-    { "name": "person1", "mbti": ["INFP"], "enneagram": ["4"], "image": "" },
-    { "name": "person2", "mbti": ["INFP"], "enneagram": ["4"], "image": "" },
-    { "name": "person3", "mbti": ["INFP", "ESTP"], "enneagram": ["4"], "image": "" }
+    { "name": "Robin Williams", "mbti": ["ENFP"], "enneagram": ["7"], "image": "" },
+    { "name": "Anne Frank", "mbti": ["ENFP"], "enneagram": ["7"], "image": "" },
+    { "name": "Hunter Thompson", "mbti": ["ENFP"], "enneagram": ["7"], "image": "" },
+    { "name": "Victor Hugo", "mbti": ["ENFP"], "enneagram": ["4"], "image": "" },
+    { "name": "Oscar Wilde", "mbti": ["ENFP"], "enneagram": ["4"], "image": "" },
+    { "name": "Salvador Dali", "mbti": ["ENFP"], "enneagram": ["4"], "image": "" },
+    { "name": "Frederick the Great", "mbti": ["ENFP"], "enneagram": ["8"], "image": "" },
+    { "name": "Walt Disney", "mbti": ["ENFP"], "enneagram": ["8"], "image": "" },
+    { "name": "Che Guevara", "mbti": ["ENFP"], "enneagram": ["8"], "image": "" },
+
+    { "name": "William Shakespeare", "mbti": ["INFP"], "enneagram": ["4"], "image": "" },
+    { "name": "Vincent von Gogh", "mbti": ["INFP"], "enneagram": ["4"], "image": "" },
+    { "name": "Virginia Woolf", "mbti": ["INFP"], "enneagram": ["4"], "image": "" },
+    { "name": "Harriet Tubman", "mbti": ["INFP"], "enneagram": ["9"], "image": "" },
+    { "name": "A.A. Milne", "mbti": ["INFP"], "enneagram": ["9"], "image": "" },
+    { "name": "Bob Marley", "mbti": ["INFP"], "enneagram": ["9"], "image": "" },
+    { "name": "J. R. R. Tolkien", "mbti": ["INFP"], "enneagram": ["6"], "image": "" },
+    { "name": "George Orwell", "mbti": ["INFP"], "enneagram": ["6"], "image": "" },
+    { "name": "George Orwell Two", "mbti": ["INFP"], "enneagram": ["6"], "image": "" }
   ]
 }

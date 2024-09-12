@@ -11,8 +11,6 @@ const submitForm = async function() {
     return;
   }
   emit('submit', { mbti: mbti.value, enneagram: enneagram.value });
-  // await fetchFigures();
-  // store.setMbti(store.mbti);
 }
 </script>
 
