@@ -23,7 +23,7 @@ const fetchBooks = async function() {
 }
 
 const handleSubmit = async function(data) { 
-  store.setMbti(data.mbti);
+  store.setMbti(data.mbti.toUpperCase());
   store.setEnneagram(data.enneagram);
   await Promise.all([fetchFigures(), fetchBooks()]);
   router.push('/results');
