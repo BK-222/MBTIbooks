@@ -9,8 +9,9 @@ definePageMeta({ middleware: 'auth' });
 </script>
 
 <template>
-  <div v-if="store.figures.length">
+  <div class="flex flex-row justify-center gap-6 my-8" v-if="store.figures.length">
     <div v-for="figure in store.figures" :key="figure.name">
+      <img class="h-64 w-48 object-cover" :src="`/img/figures/${figure.image}`" :alt="`image of ${figure.name}`">
       <p>{{ figure.name }}</p>
     </div>
   </div>

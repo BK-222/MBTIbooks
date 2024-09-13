@@ -1,7 +1,7 @@
 <script setup>
 import { ref, watch } from 'vue';
 
-const mbtiOptions = ['ENTP', 'INTP', 'ENFP', 'INFP'];
+// const mbtiOptions = ['ENTP', 'INTP', 'ENFP', 'INFP'];
 
 const props = defineProps({ modelValue: { type: String, required: true }});
 const emit = defineEmits(['update:modelValue']);

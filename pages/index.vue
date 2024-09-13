@@ -25,6 +25,8 @@ const fetchBooks = async function() {
 const handleSubmit = async function(data) { 
   store.setMbti(data.mbti.toUpperCase());
   store.setEnneagram(data.enneagram);
+  store.setBooks([]);
+  store.setFigures([]);
   await Promise.all([fetchFigures(), fetchBooks()]);
   router.push('/results');
   // resultsLoaded.value = true;
@@ -48,8 +50,9 @@ const resetResults = function() {
 </script>
 
 <template>
-  <div class="flex justify-center items-center bg-gray-200 min-h-screen">
+  <div class="flex flex-col justify-center items-center bg-gray-200 min-h-screen">
     <!-- <div v-if="!resultsLoaded"> -->
+      <p class="mb-4 text-lg">Type your MBTI and Enneagram to get some book suggestions...</p>
       <UserForm @submit="handleSubmit" />
     <!-- </div> -->
     <!-- <div v-else> -->

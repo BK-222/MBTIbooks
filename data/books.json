@@ -2,12 +2,6 @@
   "books": [
     { "title": "Catherine - Portrait of a Woman", "mbti": ["ENTP"], "enneagram": ["7"], "link": "" },
     { "title": "Franklin - An American Life", "mbti": ["ENTP"], "enneagram": ["7"], "link": "" },
-    { "title": "Leonardo Da Vinci - The Biography", "mbti": ["ENTP"], "enneagram": ["7"], "link": "" },
-    { "title": "Catherine - Portrait of a Woman", "mbti": ["ENTP"], "enneagram": ["8"], "link": "" },
-    { "title": "Franklin - An American Life", "mbti": ["ENTP"], "enneagram": ["8"], "link": "" },
-    { "title": "Leonardo Da Vinci - The Biography", "mbti": ["ENTP"], "enneagram": ["8"], "link": "" },
-    { "title": "Catherine - Portrait of a Woman", "mbti": ["ENTP"], "enneagram": ["3"], "link": "" },
-    { "title": "Franklin - An American Life", "mbti": ["ENTP"], "enneagram": ["3"], "link": "" },
-    { "title": "Leonardo Da Vinci - The Biography", "mbti": ["ENTP"], "enneagram": ["3"], "link": "" }
+    { "title": "Leonardo Da Vinci - The Biography", "mbti": ["ENTP"], "enneagram": ["7"], "link": "" }
   ]
 }
