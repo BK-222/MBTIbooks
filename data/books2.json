@@ -1,0 +1,19 @@
+{
+  "books": {
+    "fiction": [
+      { "title": "Catherine - Portrait of a Woman", "mbti": ["ENTP"], "enneagram": ["7"], "link": "https://www.goodreads.com/book/show/10414941-catherine-the-great" },
+      { "title": "Franklin - An American Life", "mbti": ["ENTP"], "enneagram": ["7"], "link": "" },
+      { "title": "Leonardo Da Vinci - The Biography", "mbti": ["ENTP"], "enneagram": ["7"], "link": "" }
+    ],
+    "non-fiction": [
+      { "title": "Catherine - Portrait of a Woman", "mbti": ["ENTP"], "enneagram": ["7"], "link": "https://www.goodreads.com/book/show/10414941-catherine-the-great" },
+      { "title": "Albert Einstein - The Biography", "mbti": ["INTP"], "enneagram": ["7"], "link": "" },
+      { "title": "Marie Curie - The Biography", "mbti": ["INTP"], "enneagram": ["7"], "link": "" }
+    ],
+    "self-development": [
+      { "title": "Catherine - Portrait of a Woman", "mbti": ["ENTP"], "enneagram": ["7"], "link": "https://www.goodreads.com/book/show/10414941-catherine-the-great" },
+      { "title": "William Shakespeare - The Biography", "mbti": ["INFP"], "enneagram": ["7"], "link": "" },
+      { "title": "George Orwell - The Biography", "mbti": ["INFP"], "enneagram": ["7"], "link": "" }
+    ]
+  }
+}

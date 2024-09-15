@@ -6,12 +6,16 @@ import { ref, watch } from 'vue';
 const props = defineProps({ modelValue: { type: String, required: true }});
 const emit = defineEmits(['update:modelValue']);
 
+const inputRef = ref(null);
+
 // const search = ref(props.modelValue);
 // const filteredOptions = ref([...mbtiOptions]);
 
 const handleInput = (event) => {
   emit('update:modelValue', event.target.value); // Emitting the input value back to the parent component
 }
+
+onMounted(() => { if (inputRef.value) { inputRef.value.focus() } }); // active caret
 // const selectOption = (option) => {
 //   search.value = option;  // Set selected value
 //   emit('update:modelValue', option);  // Emit the selected option
@@ -27,7 +31,7 @@ const handleInput = (event) => {
 
 <template>
   <label for="mbti">MBTI</label>
-  <input type="text" id="mbti" :value="modelValue" @input="handleInput" />
+  <input class="focus:outline-none" ref="inputRef" type="text" id="mbti" :value="modelValue" @input="handleInput" />
 
   <!-- <ul v-if="filteredOptions.length" class="dropdown">
     <li v-for="option in filteredOptions" :key="option" @click="selectOption(option)">
