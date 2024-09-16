@@ -8,14 +8,15 @@ const emit = defineEmits(['update:modelValue']);
 
 const inputRef = ref(null);
 
-// const search = ref(props.modelValue);
-// const filteredOptions = ref([...mbtiOptions]);
-
 const handleInput = (event) => {
   emit('update:modelValue', event.target.value); // Emitting the input value back to the parent component
 }
 
 onMounted(() => { if (inputRef.value) { inputRef.value.focus() } }); // active caret
+
+// const search = ref(props.modelValue);
+// const filteredOptions = ref([...mbtiOptions]);
+
 // const selectOption = (option) => {
 //   search.value = option;  // Set selected value
 //   emit('update:modelValue', option);  // Emit the selected option

@@ -24,7 +24,7 @@ definePageMeta({ middleware: 'auth' });
     <!-- <div v-for="(books, genre) in store.books" :key="genre">
       {{ genre }}: -->
     <!-- </div> -->
-  </div>
+  </div>     
   <div class="flex justify-center">
     <BaseButton class="px-6 py-2" @click="router.push('/')">go back</BaseButton>
   </div>

@@ -29,9 +29,6 @@ const submitForm = async function() {
   emit('submit', { mbti: mbti.value, enneagram: enneagram.value });
 }
 // watch([mbti, enneagram], () => { mbtiError.value = ''; enneagramError.value = ''; });
-
-// watch(mbti, () => { mbtiError.value = ''; });
-// watch(enneagram, () => { enneagramError.value = ''; });
 </script>
 
 <template>  
