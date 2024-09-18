@@ -17,13 +17,13 @@ const submitForm = async function() {
     return;
   }
   if (!mbtiRegex.test(mbti.value)) {
-    // alert('Please enter a valid MBTI.');
-    mbtiError.value = 'Please enter a valid MBTI.';
+    alert('Please enter a valid MBTI.');
+    // mbtiError.value = 'Please enter a valid MBTI.';
     return;
   }
   if (!enneagramRegex.test(enneagram.value)) {
-    // alert('Please enter a valid whole Enneagram number.');
-    enneagramError.value = 'Please enter a valid whole Enneagram number.';
+    alert('Please enter a valid whole Enneagram number.');
+    // enneagramError.value = 'Please enter a valid whole Enneagram number.';
     return;
   }
   emit('submit', { mbti: mbti.value, enneagram: enneagram.value });
@@ -35,9 +35,9 @@ const submitForm = async function() {
 <template>  
   <BaseForm @submit.prevent="submitForm">
     <MbtiInput v-model="mbti" />
-    <p v-if="mbtiError" class="text-gray-900">{{ mbtiError }}</p>
+    <!-- <p v-if="mbtiError" class="text-gray-900">{{ mbtiError }}</p> -->
     <EnneagramInput v-model="enneagram" />
-    <p v-if="enneagramError" class="text-gray-900">{{ enneagramError }}</p>
-    <BaseButton>Submit</BaseButton>
+    <!-- <p v-if="enneagramError" class="text-gray-900">{{ enneagramError }}</p> -->
+    <BaseButton class="self-center">Submit</BaseButton>
   </BaseForm>
 </template>

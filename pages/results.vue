@@ -14,21 +14,21 @@ const userData = computed(() => {
 </script>
 
 <template>
-  <div class="flex flex-row justify-center gap-6 my-8" v-if="store.figures.length">
+  <div class="flex flex-row justify-center gap-6 my-4" v-if="store.figures.length">
     <div v-for="figure in store.figures" :key="figure.name">
       <NuxtImg class="h-80 w-60 object-cover rounded-sm" :src="`/img/figures/${figure.image}`" :alt="`image of ${figure.name}`" />
       <p class="text-center font-semibold">{{ figure.name }}</p>
     </div>
   </div>
-  <div class="flex justify-center text-lg font-semibold">
+  <div class="flex justify-center text-xl font-semibold">
     {{ userData }}
   </div>
   <div class="flex flex-col items-center" v-if="store.books.length">
-      <div class="my-2" v-for="book in store.books" :key="book.title">
-        <p>{{ book.title }}</p>
-        <p>Genre: {{ book.genre }}</p>
-        <a :href="book.link" target="_blank">{{ book.link }}</a>
-      </div>
+    <BaseCard class="my-6" v-for="book in store.books" :key="book.title">
+      <p class="mb-0.5 text-xl semibold">{{ book.title }}</p>
+      <p class="mb-0.5 text-gray-400">Genre: {{ book.genre }}</p>
+      <a :href="book.link" target="_blank">{{ book.link }}</a>
+    </BaseCard>
   </div>     
   <div class="flex justify-center">
     <BaseButton class="px-6 py-2" @click="router.push('/')">go back</BaseButton>

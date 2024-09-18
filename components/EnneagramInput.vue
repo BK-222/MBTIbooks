@@ -7,6 +7,6 @@
 </script>
 
 <template>
-  <label for="enneagram">Enneagram</label>
+  <label class="lg:self-center lg:mx-1" for="enneagram">Enneagram</label>
   <input class="focus:outline-none" placeholder="Enter your Enneagram" type="text" id="mbti" :value="modelValue" @input="handleInput" />
 </template>
