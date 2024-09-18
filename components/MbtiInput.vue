@@ -32,7 +32,7 @@ onMounted(() => { if (inputRef.value) { inputRef.value.focus() } }); // active c
 
 <template>
   <label for="mbti">MBTI</label>
-  <input class="focus:outline-none" ref="inputRef" type="text" id="mbti" :value="modelValue" @input="handleInput" />
+  <input class="focus:outline-none" placeholder="Enter your MBTI" ref="inputRef" type="text" id="mbti" :value="modelValue" @input="handleInput" />
 
   <!-- <ul v-if="filteredOptions.length" class="dropdown">
     <li v-for="option in filteredOptions" :key="option" @click="selectOption(option)">

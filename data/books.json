@@ -1,13 +1,17 @@
 {
   "books": [
-    { "title": "Catherine - Portrait of a Woman", "mbti": ["ENTP"], "enneagram": ["7"], "link": "https://www.goodreads.com/book/show/10414941-catherine-the-great" },
-    { "title": "Franklin - An American Life", "mbti": ["ENTP"], "enneagram": ["7"], "link": "https://www.goodreads.com/book/show/10414941-catherine-the-great" },
-    { "title": "Leonardo Da Vinci - The Biography", "mbti": ["ENTP"], "enneagram": ["7"], "link": "https://www.goodreads.com/book/show/10414941-catherine-the-great" },
-    { "title": "Catherine - Portrait of a Woman", "mbti": ["ENTP"], "enneagram": ["7"], "link": "https://www.goodreads.com/book/show/10414941-catherine-the-great" },
-    { "title": "Franklin - An American Life", "mbti": ["ENTP"], "enneagram": ["7"], "link": "https://www.goodreads.com/book/show/10414941-catherine-the-great" },
-    { "title": "Leonardo Da Vinci - The Biography", "mbti": ["ENTP"], "enneagram": ["7"], "link": "https://www.goodreads.com/book/show/10414941-catherine-the-great" },
-    { "title": "Catherine - Portrait of a Woman", "mbti": ["ENTP"], "enneagram": ["7"], "link": "https://www.goodreads.com/book/show/10414941-catherine-the-great" },
-    { "title": "Franklin - An American Life", "mbti": ["ENTP"], "enneagram": ["7"], "link": "https://www.goodreads.com/book/show/10414941-catherine-the-great" },
-    { "title": "Leonardo Da Vinci - The Biography", "mbti": ["ENTP"], "enneagram": ["7"], "link": "https://www.goodreads.com/book/show/10414941-catherine-the-great" }
+    { "title": "Catherine - Portrait of a Woman", "genre": "fiction", "mbti": ["ENTP"], "enneagram": ["7"], "link": "https://www.goodreads.com/book/show/10414941-catherine-the-great" },
+    { "title": "Franklin - An American Life", "genre": "fiction", "mbti": ["ENTP"], "enneagram": ["7"], "link": "https://www.goodreads.com/book/show/10414941-catherine-the-great" },
+    { "title": "Leonardo Da Vinci - The Biography", "genre": "fiction", "mbti": ["ENTP"], "enneagram": ["7"], "link": "https://www.goodreads.com/book/show/10414941-catherine-the-great" },
+    { "title": "Catherine - Portrait of a Woman", "genre": "non-fiction", "mbti": ["ENTP"], "enneagram": ["7"], "link": "https://www.goodreads.com/book/show/10414941-catherine-the-great" },
+    { "title": "Franklin - An American Life", "genre": "non-fiction", "mbti": ["ENTP"], "enneagram": ["7"], "link": "https://www.goodreads.com/book/show/10414941-catherine-the-great" },
+    { "title": "Leonardo Da Vinci - The Biography", "genre": "non-fiction", "mbti": ["ENTP"], "enneagram": ["7"], "link": "https://www.goodreads.com/book/show/10414941-catherine-the-great" },
+    
+    { "title": "Catherine - Portrait of a Woman", "genre": "fiction", "mbti": ["ENTP"], "enneagram": ["8"], "link": "https://www.goodreads.com/book/show/10414941-catherine-the-great" },
+    { "title": "Franklin - An American Life", "genre": "fiction", "mbti": ["ENTP"], "enneagram": ["8"], "link": "https://www.goodreads.com/book/show/10414941-catherine-the-great" },
+    { "title": "Leonardo Da Vinci - The Biography", "genre": "fiction", "mbti": ["ENTP"], "enneagram": ["8"], "link": "https://www.goodreads.com/book/show/10414941-catherine-the-great" },
+    { "title": "Catherine - Portrait of a Woman", "genre": "non-fiction", "mbti": ["ENTP"], "enneagram": ["8"], "link": "https://www.goodreads.com/book/show/10414941-catherine-the-great" },
+    { "title": "Franklin - An American Life", "genre": "non-fiction", "mbti": ["ENTP"], "enneagram": ["8"], "link": "https://www.goodreads.com/book/show/10414941-catherine-the-great" },
+    { "title": "Leonardo Da Vinci - The Biography", "genre": "non-fiction", "mbti": ["ENTP"], "enneagram": ["8"], "link": "https://www.goodreads.com/book/show/10414941-catherine-the-great" }
   ]
 }

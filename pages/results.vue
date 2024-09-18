@@ -26,6 +26,7 @@ const userData = computed(() => {
   <div class="flex flex-col items-center" v-if="store.books.length">
       <div class="my-2" v-for="book in store.books" :key="book.title">
         <p>{{ book.title }}</p>
+        <p>Genre: {{ book.genre }}</p>
         <a :href="book.link" target="_blank">{{ book.link }}</a>
       </div>
   </div>     

@@ -10,6 +10,7 @@ const fetchBooksData = defineEventHandler(async (event) => {
 
     const idealResponse = filteredBooks.map(book => ({
       title: book.title,
+      genre: book.genre,
       link: book.link
     }));
 

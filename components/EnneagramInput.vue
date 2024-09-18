@@ -8,5 +8,5 @@
 
 <template>
   <label for="enneagram">Enneagram</label>
-  <input class="focus:outline-none" type="text" id="mbti" :value="modelValue" @input="handleInput" />
+  <input class="focus:outline-none" placeholder="Enter your Enneagram" type="text" id="mbti" :value="modelValue" @input="handleInput" />
 </template>

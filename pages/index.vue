@@ -4,7 +4,7 @@ import useUserInputStore from '@/stores/UserInput.js';
 
 const store = useUserInputStore();
 const router = useRouter();
-// const resultsLoaded = ref(false);
+const isLoading = ref(false);
 
 const fetchData = async function(type, setter) {
   try {
@@ -22,14 +22,15 @@ const fetchBooks = async function() {
   await fetchData('books', store.setBooks);
 }
 
-const handleSubmit = async function(data) { 
+const handleSubmit = async function(data) {
+  isLoading.value = true;
   store.setMbti(data.mbti.toUpperCase());
   store.setEnneagram(data.enneagram);
   store.setBooks([]);
   store.setFigures([]);
   await Promise.all([fetchFigures(), fetchBooks()]);
   router.push('/results');
-  // resultsLoaded.value = true;
+  isLoading.value = false;
 }
 
 const resetResults = function() {
@@ -51,12 +52,11 @@ const resetResults = function() {
 
 <template>
   <div class="flex flex-col justify-center items-center bg-gray-200 min-h-screen">
-    <!-- <div v-if="!resultsLoaded"> -->
       <p class="mb-4 text-lg">Type your MBTI and Enneagram to get some book suggestions...</p>
       <UserForm @submit="handleSubmit" />
-    <!-- </div> -->
-    <!-- <div v-else> -->
-
-    <!-- </div> -->
+      <div v-if="isLoading">
+        <p>fetching data...</p>
+        <div class="spinner-border animate-spin inline-block w-6 h-6 border-2 rounded-full border-teal-500 border-t-transparent"></div>
+      </div>
   </div>
 </template>
