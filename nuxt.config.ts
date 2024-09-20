@@ -2,7 +2,10 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-  // ssr: true,
+  ssr: true,
+  nitro: {
+    preset: 'netlify'
+  },
   modules: [
     '@pinia/nuxt',
     '@nuxt/image'
@@ -13,8 +16,5 @@ export default defineNuxtConfig({
       tailwindcss: {},
       autoprefixer: {}
     }
-  },
-  // app: {
-  //   pageTransition: { name: 'page', mode: 'out-in' }
-  // }
+  }
 })
