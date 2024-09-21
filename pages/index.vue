@@ -55,13 +55,15 @@ const resetResults = function() {
 </script>
 
 <template>
-    <div class="flex flex-col justify-center min-h-screen items-center bg-gray-200">
-        <p class="my-4 text-4xl">Hello :)</p>
-        <p class="mb-4 text-center text-lg">Feel free to type in your MBTI and Enneagram to get some book suggestions...</p>
-        <UserForm @submit="handleSubmit" />
-        <div v-if="isLoading">
-          <p>fetching data...</p>
-          <div class="spinner-border animate-spin inline-block w-6 h-6 border-2 rounded-full border-teal-500 border-t-transparent"></div>
-        </div>
+  <div class="flex justify-center items-center min-h-screen">
+    <div class="flex flex-col justify-center items-center bg-gray-200">
+      <p class="my-4 text-4xl">Hello :)</p>
+      <p class="mb-4 text-center text-lg">Feel free to type in your MBTI and Enneagram to get some book suggestions...</p>
+      <UserForm @submit="handleSubmit" />
+      <div v-if="isLoading">
+        <p>fetching data...</p>
+        <div class="spinner-border animate-spin inline-block w-6 h-6 border-2 rounded-full border-teal-500 border-t-transparent"></div>
+      </div>
     </div>
+  </div>
 </template>

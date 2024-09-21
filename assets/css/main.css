@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+  .route-leave-active, .route-enter-active {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  .route-enter-from, .route-leave-to {
+    @apply opacity-0 translate-y-4;
+  }
+
+  .route-enter-to, .route-leave-from {
+    @apply opacity-100 translate-y-0;
+  }
+
+

@@ -14,9 +14,10 @@ const userData = computed(() => {
 </script>
 
 <template>
+  <div>
   <div class="flex flex-row justify-center gap-6 my-4" v-if="store.figures.length">
     <div v-for="figure in store.figures" :key="figure.name">
-      <NuxtImg class="h-80 w-60 object-cover rounded-sm" :src="`/img/figures/${figure.image}`" :alt="`image of ${figure.name}`" />
+      <NuxtImg class="h-80 w-60 object-cover rounded-sm" :src="`/img/figures/${figure.image}`" :alt="`image of ${figure.name}`" loading="lazy"/>
       <p class="text-center font-semibold">{{ figure.name }}</p>
     </div>
   </div>
@@ -33,6 +34,7 @@ const userData = computed(() => {
   <div class="flex justify-center">
     <BaseButton class="px-6 py-2" @click="router.push('/')">go back</BaseButton>
   </div>
+</div>
 </template>
 
 <!-- <div v-for="book in store.books" :key="book.title"> -->

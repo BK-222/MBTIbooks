@@ -10,7 +10,13 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxt/image'
   ],
-  css: ['@/assets/css/main.css'],
+  css: ['@/assets/css/main.css', '@/assets/css/transitions.css'],
+  app: {
+    pageTransition: {
+      name: 'route',
+      mode: 'out-in'
+    }
+  },
   postcss: {
     plugins: {
       tailwindcss: {},
