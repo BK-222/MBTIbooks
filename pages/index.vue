@@ -61,8 +61,10 @@ const resetResults = function() {
       <p class="mb-4 text-center text-lg">Feel free to type in your MBTI and Enneagram to get some book suggestions...</p>
       <UserForm v-if="!isLoading" @submit="handleSubmit" />
       <div v-else>
-        <p>fetching data...</p>
-        <div class="spinner-border animate-spin inline-block w-6 h-6 border-2 rounded-full border-teal-500 border-t-transparent"></div>
+        <div class="flex flex-col items-center">
+          <p class="mb-2">Fetching data...</p>
+          <div class="spinner-border animate-spin inline-block w-12 h-12 border-4 rounded-full border-teal-500 border-t-transparent"></div>
+        </div>
       </div>
     </div>
   </div>

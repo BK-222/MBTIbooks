@@ -1,10 +1,6 @@
-<!-- <template>
-  <button type="submit" class="p-1 border border-gray-400 rounded-sm">Submit</button>
-</template> -->
-
 <template>
-  <button class="inline-block px-2.5 py-1.5 bg-teal-400 text-gray-700 border rounded-sm
-  hover:bg-teal-500 hover:text-gray-900 focus:outline-none transition">
+  <button class="inline-block px-4 py-2 bg-teal-500 text-gray-100 rounded-sm
+   hover:bg-teal-600 focus:outline-none transition">
     <slot></slot>
   </button>
 </template>

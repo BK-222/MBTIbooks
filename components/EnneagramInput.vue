@@ -7,6 +7,8 @@
 </script>
 
 <template>
+  <div class="flex flex-col lg:flex-row lg:space-x-1 ">
   <label class="text-base lg:text-sm lg:self-center lg:mx-1" for="enneagram">Enneagram</label>
-  <input class="focus:outline-none" placeholder="Enter your Enneagram" type="text" id="mbti" :value="modelValue" @input="handleInput" />
+  <input class="focus:outline-none p-2 border rounded w-full" placeholder="Enter your Enneagram" type="text" id="enneagram" :value="modelValue" @input="handleInput" />
+  </div>
 </template>

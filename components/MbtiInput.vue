@@ -31,14 +31,19 @@ onMounted(() => { if (inputRef.value) { inputRef.value.focus() } }); // active c
 </script>
 
 <template>
-  <label class="text-base lg:text-sm lg:self-center lg:mx-1" for="mbti">MBTI</label>
-  <input class="focus:outline-none" placeholder="Enter your MBTI" ref="inputRef" type="text" id="mbti" :value="modelValue" @input="handleInput" />
+  <!-- <label class="text-base lg:text-sm lg:self-center lg:mx-1" for="mbti">MBTI</label>
+  <input class="focus:outline-none" placeholder="Enter your MBTI" ref="inputRef" type="text" id="mbti" :value="modelValue" @input="handleInput" /> -->
 
   <!-- <ul v-if="filteredOptions.length" class="dropdown">
     <li v-for="option in filteredOptions" :key="option" @click="selectOption(option)">
       {{ option }}
     </li>
   </ul> -->
+
+  <div class="flex flex-col lg:flex-row lg:space-x-0.5 ">
+    <label class="text-base lg:text-sm lg:self-center lg:mx-1" for="mbti">MBTI</label>
+    <input class="focus:outline-none p-2 border rounded w-full" placeholder="Enter your MBTI" ref="inputRef" type="text" id="mbti" :value="modelValue" @input="handleInput" />
+  </div>
 </template>
 
 <!-- <style scoped>

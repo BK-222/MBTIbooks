@@ -38,6 +38,6 @@ const submitForm = async function() {
     <!-- <p v-if="mbtiError" class="text-gray-900">{{ mbtiError }}</p> -->
     <EnneagramInput v-model="enneagram" />
     <!-- <p v-if="enneagramError" class="text-gray-900">{{ enneagramError }}</p> -->
-    <BaseButton class="self-center">Submit</BaseButton>
+    <BaseButton class="self-center mt-1.5 lg:mt-0">Submit</BaseButton>
   </BaseForm>
 </template>
