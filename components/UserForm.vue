@@ -34,10 +34,12 @@ const submitForm = async function() {
 
 <template>  
   <BaseForm @submit.prevent="submitForm">
-    <MbtiInput v-model="mbti" />
-    <!-- <p v-if="mbtiError" class="text-gray-900">{{ mbtiError }}</p> -->
-    <EnneagramInput v-model="enneagram" />
-    <!-- <p v-if="enneagramError" class="text-gray-900">{{ enneagramError }}</p> -->
-    <BaseButton class="self-center mt-1.5 lg:mt-0">Submit</BaseButton>
+    <!-- <div class="flex flex-col lg:flex-row lg:items-center lg:space-x-1 w-full"> -->
+      <MbtiInput v-model="mbti" />
+      <!-- <p v-if="mbtiError" class="text-gray-900">{{ mbtiError }}</p> -->
+      <EnneagramInput v-model="enneagram" />
+      <!-- <p v-if="enneagramError" class="text-gray-900">{{ enneagramError }}</p> -->
+      <BaseButton class="self-center mt-1.5 lg:mt-0">Submit</BaseButton>
+    <!-- </div> -->
   </BaseForm>
 </template>

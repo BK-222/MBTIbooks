@@ -29,10 +29,11 @@ const userData = computed(() => {
         <p class="mb-0.5 text-xl semibold">{{ book.title }}</p>
         <p class="mb-0.5 text-gray-400">Genre: {{ book.genre }}</p>
         <a :href="book.link" target="_blank">{{ book.link }}</a>
+        <!-- <BaseButton class="mt-4">View Book</BaseButton> -->
       </BaseCard>
     </div>     
     <div class="flex justify-center">
-      <BaseButton class="px-6 py-2 font-semibold" @click="router.push('/')">go back</BaseButton>
+      <BaseButton class="px-6 py-2 mb-6 font-semibold" @click="router.push('/')">go back</BaseButton>
     </div>
   </div>
 </template>

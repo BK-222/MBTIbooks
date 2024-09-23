@@ -11,6 +11,7 @@ const fetchData = async function(type, setter) {
     const response = await $fetch(`/api/${type}?mbti=${store.mbti}&enneagram=${store.enneagram}`);
     setter(response);
   } catch (error) {
+    alert('No results found as of yet!');
     console.error('Error fetching data', error.message);
   }
 }
