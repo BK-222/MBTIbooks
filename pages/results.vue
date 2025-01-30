@@ -14,7 +14,7 @@ const userData = computed(() => {
 </script>
 
 <template>
-  <div class="space-y-4">
+  <div class="space-y-4 w-full max-w-7xl mx-auto px-4">
     <div class="flex flex-row justify-center gap-6 my-4" v-if="store.figures.length">
       <div v-for="figure in store.figures" :key="figure.name">
         <NuxtImg class="h-80 w-60 object-cover rounded-sm" :src="`/img/figures/${figure.image}`" :alt="`image of ${figure.name}`" loading="lazy"/>
