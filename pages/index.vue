@@ -7,13 +7,13 @@ const router = useRouter();
 const isLoading = ref(false);
 
 const fetchData = async function(type, setter) {
-  try {
+  // try {
     const response = await $fetch(`/api/${type}?mbti=${store.mbti}&enneagram=${store.enneagram}`);
     setter(response);
-  } catch (error) {
-    alert('No results found as of yet!');
-    console.error('Error fetching data', error.message);
-  }
+  // } catch (error) {
+  //   alert('No results found as of yet!');
+  //   console.error(`Error fetching ${type}:`, error.message);
+  // }
 }
 
 const fetchFigures = async function() {
@@ -31,10 +31,12 @@ const handleSubmit = async function(data) {
   store.setFigures([]);
   try {
     await Promise.all([fetchFigures(), fetchBooks()]);
-    router.push('/results');
-    isLoading.value = false;
+    await router.push('/results');
   } catch (error) {
+    alert('No results found as of yet!');
     console.error('Error fetching data', error.message);
+  } finally {
+    isLoading.value = false;
   }
 }
 
@@ -59,7 +61,7 @@ const resetResults = function() {
   <div class="w-full">
     <div class="flex flex-col items-center p-4">
       <p class="my-4 text-4xl">Hello :)</p>
-      <p class="mb-4 text-center text-lg">Feel free to type in your MBTI and Enneagram to get some book suggestions...</p>
+      <p class="mb-4 text-center text-lg">Feel free to enter your MBTI and Enneagram to get some book suggestions...</p>
       <UserForm v-if="!isLoading" @submit="handleSubmit" />
       <div v-else>
         <div class="flex flex-col items-center">
